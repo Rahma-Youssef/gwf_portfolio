@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
-:root {
+
+.font-allura {
+  font-family: var(--font-allura);
+}
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+.font-Poppins {
+  font-family: var(--font-Poppins);
+}
+
+
+
+/*👉:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,3 +37,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+👈*/
