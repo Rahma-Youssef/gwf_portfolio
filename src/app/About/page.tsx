@@ -1,20 +1,28 @@
 
 
-
-
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 import Image from "next/image";
 
 import aboutImage from "./../../../public/images/aboutImage.jpg";
 import bgLeaf from "./../../../public/images/bgLeaf2.png";
+import { useRef } from "react";
 
 export default function About() {
+
+  const ref = useRef(null);
+
+  const isInView = useInView(ref, {
+    once: true,
+    amount: 0.3,
+  });
   return (
     <section
       id="About"
+
       className="relative overflow-hidden bg-[#FCFAF7] py-28"
+      ref={ref}
     >
       {/* Glow */}
       <div className="absolute left-0 top-20 h-[450px] w-[450px] rounded-full bg-[#EEDCC8]/40 blur-[120px]" />
@@ -67,6 +75,11 @@ export default function About() {
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
+          animate={
+            isInView
+              ? { opacity: 1, x: 0 }
+              : { opacity: 0, x: -80 }
+          }
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: .8 }}
@@ -120,6 +133,11 @@ export default function About() {
               scale: 1,
               rotate: 0,
             }}
+            animate={
+  isInView
+    ? { opacity: 1, x: 0 }
+    : { opacity: 0, x: -80 }
+}
             viewport={{ once: true }}
             transition={{
               duration: .9,
@@ -184,6 +202,7 @@ export default function About() {
                 duration: 4,
                 repeat: Infinity,
               }}
+              
               className="
         absolute
         -top-6
@@ -226,6 +245,11 @@ export default function About() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
+              animate={
+  isInView
+    ? { opacity: 1, x: 0 }
+    : { opacity: 0, x: -80 }
+}
             >
               <Image
                 src={aboutImage}
@@ -394,46 +418,46 @@ export default function About() {
             </div>
 
             {/* Company Story */}
-      
 
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.8 }}
-  className="mt-12 grid gap-6 lg:grid-cols-2"
->
-  {[
-    {
-      title: "Our Story",
-      icon: "✨",
-      text: "بدأت Golden Glow Events برؤية بسيطة، وهي أن تتحول كل مناسبة إلى تجربة استثنائية تمزج بين الإبداع والرقي، لنصنع ذكريات تبقى في القلوب قبل الصور.",
-    },
-    {
-      title: "Our Vision",
-      icon: "👑",
-      text: "أن نصبح من الشركات الرائدة في تنظيم المناسبات داخل مصر، وأن نقدم تجربة متكاملة تجمع بين الفخامة، الجودة، والابتكار في كل تفصيلة.",
-    },
-    {
-      title: "Our Promise",
-      icon: "🤍",
-      text: "نلتزم بأن تكون كل مناسبة انعكاسًا لشخصية عملائنا، ونهتم بأدق التفاصيل لنقدم تجربة راقية تتجاوز التوقعات.",
-    },
-  ].map((item, index) => (
-    <motion.div
-      key={index}
-      initial={{ opacity: 0, x: 40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        delay: index * 0.15,
-        duration: 0.6,
-      }}
-      whileHover={{
-        y: -6,
-        scale: 1.02,
-      }}
-      className={`
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="mt-12 grid gap-6 lg:grid-cols-2"
+            >
+              {[
+                {
+                  title: "Our Story",
+                  icon: "✨",
+                  text: "بدأت Golden Glow Events برؤية بسيطة، وهي أن تتحول كل مناسبة إلى تجربة استثنائية تمزج بين الإبداع والرقي، لنصنع ذكريات تبقى في القلوب قبل الصور.",
+                },
+                {
+                  title: "Our Vision",
+                  icon: "👑",
+                  text: "أن نصبح من الشركات الرائدة في تنظيم المناسبات داخل مصر، وأن نقدم تجربة متكاملة تجمع بين الفخامة، الجودة، والابتكار في كل تفصيلة.",
+                },
+                {
+                  title: "Our Promise",
+                  icon: "🤍",
+                  text: "نلتزم بأن تكون كل مناسبة انعكاسًا لشخصية عملائنا، ونهتم بأدق التفاصيل لنقدم تجربة راقية تتجاوز التوقعات.",
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    delay: index * 0.15,
+                    duration: 0.6,
+                  }}
+                  whileHover={{
+                    y: -6,
+                    scale: 1.02,
+                  }}
+                  className={`
         relative
         overflow-hidden
         rounded-[24px]
@@ -448,14 +472,14 @@ export default function About() {
         duration-300
         ${index === 2 ? "lg:col-span-2" : ""}
       `}
-    >
-      {/* Gold Accent */}
-      <div className="absolute left-0 top-0 h-full w-[3px] bg-[#C89A7B]" />
+                >
+                  {/* Gold Accent */}
+                  <div className="absolute left-0 top-0 h-full w-[3px] bg-[#C89A7B]" />
 
-      {/* Header */}
-      <div className="flex items-center gap-4">
-        <div
-          className="
+                  {/* Header */}
+                  <div className="flex items-center gap-4">
+                    <div
+                      className="
             flex
             h-11
             w-11
@@ -468,32 +492,32 @@ export default function About() {
             text-xl
             md:text-2xl
           "
-        >
-          {item.icon}
-        </div>
+                    >
+                      {item.icon}
+                    </div>
 
-        <div>
-          <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#0F4C4C]">
-            {item.title}
-          </h3>
+                    <div>
+                      <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#0F4C4C]">
+                        {item.title}
+                      </h3>
 
-          <span className="text-[11px] md:text-xs uppercase tracking-[0.25em] text-[#C89A7B]">
-            Golden Glow Events
-          </span>
-        </div>
-      </div>
+                      <span className="text-[11px] md:text-xs uppercase tracking-[0.25em] text-[#C89A7B]">
+                        Golden Glow Events
+                      </span>
+                    </div>
+                  </div>
 
-      {/* Text */}
-      <p
-        dir="rtl"
-        className="mt-4 text-sm md:text-base leading-8 text-gray-600"
-      >
-        {item.text}
-      </p>
+                  {/* Text */}
+                  <p
+                    dir="rtl"
+                    className="mt-4 text-sm md:text-base leading-8 text-gray-600"
+                  >
+                    {item.text}
+                  </p>
 
-      {/* Decorative */}
-      <div
-        className="
+                  {/* Decorative */}
+                  <div
+                    className="
           absolute
           -right-6
           -bottom-8
@@ -503,45 +527,12 @@ export default function About() {
           text-[#C89A7B]/5
           select-none
         "
-      >
-        ✦
-      </div>
-    </motion.div>
-  ))}
-</motion.div>
-
-            {/* Button */}
-
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-              }}
-              whileTap={{
-                scale: .96,
-              }}
-              className="
-      group
-      mt-12
-      flex
-      items-center
-      gap-3
-      rounded-full
-      bg-[#0F4C4C]
-      px-8
-      py-4
-      text-white
-      shadow-xl
-      transition-all
-    "
-            >
-
-              Discover More
-
-              <span className="transition-transform duration-300 group-hover:translate-x-2">
-                →
-              </span>
-
-            </motion.button>
+                  >
+                    ✦
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
 
           </motion.div>
 

@@ -28,7 +28,7 @@ export default function Hero() {
                 </div>
 
                 <div className="order-1 lg:order-2">
-                    <HeroImage />
+                    <HeroImage isActive={isHeroInView} />
                 </div>
 
 

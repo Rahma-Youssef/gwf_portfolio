@@ -33,7 +33,7 @@ export default function HeroContent() {
             animateBy="words"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className=" inline-block font-cormorant text-[#0F4C4C] text-4xl md:text-6xl xl:text-7xl font-medium leading-tight"
+            className=" inline-block font-cormorant text-[#0F4C4C] text-4xl md:text-5xl xl:text-7xl font-medium leading-tight"
           />        
 
 
