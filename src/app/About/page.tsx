@@ -11,6 +11,8 @@ import { useRef } from "react";
 
 export default function About() {
 
+
+
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
@@ -417,122 +419,10 @@ export default function About() {
 
             </div>
 
-            {/* Company Story */}
+       
 
 
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="mt-12 grid gap-6 lg:grid-cols-2"
-            >
-              {[
-                {
-                  title: "Our Story",
-                  icon: "✨",
-                  text: "بدأت Golden Glow Events برؤية بسيطة، وهي أن تتحول كل مناسبة إلى تجربة استثنائية تمزج بين الإبداع والرقي، لنصنع ذكريات تبقى في القلوب قبل الصور.",
-                },
-                {
-                  title: "Our Vision",
-                  icon: "👑",
-                  text: "أن نصبح من الشركات الرائدة في تنظيم المناسبات داخل مصر، وأن نقدم تجربة متكاملة تجمع بين الفخامة، الجودة، والابتكار في كل تفصيلة.",
-                },
-                {
-                  title: "Our Promise",
-                  icon: "🤍",
-                  text: "نلتزم بأن تكون كل مناسبة انعكاسًا لشخصية عملائنا، ونهتم بأدق التفاصيل لنقدم تجربة راقية تتجاوز التوقعات.",
-                },
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: 40 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    delay: index * 0.15,
-                    duration: 0.6,
-                  }}
-                  whileHover={{
-                    y: -6,
-                    scale: 1.02,
-                  }}
-                  className={`
-        relative
-        overflow-hidden
-        rounded-[24px]
-        border
-        border-[#EFE3D6]
-        bg-white/80
-        backdrop-blur-md
-        p-6
-        md:p-7
-        shadow-lg
-        transition-all
-        duration-300
-        ${index === 2 ? "lg:col-span-2" : ""}
-      `}
-                >
-                  {/* Gold Accent */}
-                  <div className="absolute left-0 top-0 h-full w-[3px] bg-[#C89A7B]" />
 
-                  {/* Header */}
-                  <div className="flex items-center gap-4">
-                    <div
-                      className="
-            flex
-            h-11
-            w-11
-            md:h-12
-            md:w-12
-            items-center
-            justify-center
-            rounded-full
-            bg-[#F8EEE5]
-            text-xl
-            md:text-2xl
-          "
-                    >
-                      {item.icon}
-                    </div>
-
-                    <div>
-                      <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#0F4C4C]">
-                        {item.title}
-                      </h3>
-
-                      <span className="text-[11px] md:text-xs uppercase tracking-[0.25em] text-[#C89A7B]">
-                        Golden Glow Events
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Text */}
-                  <p
-                    dir="rtl"
-                    className="mt-4 text-sm md:text-base leading-8 text-gray-600"
-                  >
-                    {item.text}
-                  </p>
-
-                  {/* Decorative */}
-                  <div
-                    className="
-          absolute
-          -right-6
-          -bottom-8
-          text-[80px]
-          md:text-[100px]
-          font-black
-          text-[#C89A7B]/5
-          select-none
-        "
-                  >
-                    ✦
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
 
           </motion.div>
 

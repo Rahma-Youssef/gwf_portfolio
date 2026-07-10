@@ -16,6 +16,7 @@ export default function Hero() {
     const isHeroInView = useInView(heroRef, {
         amount: 0.4,
     });
+
     return (
         <section
             ref={heroRef}
