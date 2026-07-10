@@ -179,7 +179,7 @@ export default function HeroImage() {
       ease: "easeInOut",
     },
   }}
-  className="absolute bottom-6 -left-6 origin-bottom-right"
+  className="absolute bottom-6 -left-6 origin-bottom-right lg:-left-200"
 >
   <Image
     src={leaf}
@@ -187,7 +187,7 @@ export default function HeroImage() {
     width={0}
     height={0}
     sizes="100vw"
-    className="w-23 sm:w-40 md:w-52 lg:w-40 xl:w-48 h-auto scale-x-[-1] block lg:hidden"
+    className="w-23 sm:w-40 md:w-52 lg:w-40 xl:w-48 h-auto scale-x-[-1] block "
   />
 </motion.div>
 
@@ -208,7 +208,7 @@ export default function HeroImage() {
       ease: "easeInOut",
     },
   }}
-  className="absolute top-6 -right-6 origin-top-left"
+  className="absolute top-6 -right-6 origin-top-left  lg:-right-40"
 >
   <Image
     src={leaf}
@@ -216,7 +216,7 @@ export default function HeroImage() {
     width={0}
     height={0}
     sizes="100vw"
-    className="w-23 sm:w-40 md:w-52 lg:w-40 xl:w-48 h-auto block lg:hidden"
+    className="w-23 sm:w-40 md:w-52 lg:w-40 xl:w-48 h-auto block "
   />
 </motion.div>
 

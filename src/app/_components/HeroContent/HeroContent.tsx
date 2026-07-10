@@ -1,6 +1,16 @@
+"use client";
 import Link from "next/link";
+import BlurText from "@/components/BlurText";
+
+
+
 
 export default function HeroContent() {
+
+  const handleAnimationComplete = () => {
+    console.log('Animation completed!');
+  };
+
   return (
     <div className="flex flex-col justify-center lg:pr-10">
 
@@ -15,9 +25,18 @@ export default function HeroContent() {
 
       {/* Main Heading */}
       <h1 className="text-center ">
-        <span className="block font-cormorant text-[#0F4C4C] text-5xl md:text-6xl xl:text-7xl font-medium leading-tight">
-          Creating Moments
-        </span>
+
+        
+         <BlurText
+            text="Creating Moments"
+            delay={200}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className=" inline-block font-cormorant text-[#0F4C4C] text-4xl md:text-6xl xl:text-7xl font-medium leading-tight"
+          />        
+
+
 
         <span className="mt-2 block font-allura  italic text-[#C89A7B] text-4xl md:text-5xl xl:text-6xl ">
           That Last Forever
@@ -25,7 +44,7 @@ export default function HeroContent() {
       </h1>
 
       {/* Description */}
-      <p className="mt-8 max-w-4xl text-center xl:text-left text-gray-600 leading-8 text-base md:text-lg">
+      <p className="mt-8 max-w-4xl xl:text-left text-gray-600 leading-8 text-base md:text-lg">
         We design and plan unforgettable events with elegance,
         creativity and perfection. From weddings and birthdays
         to luxury corporate events, every detail is crafted to
@@ -41,7 +60,7 @@ export default function HeroContent() {
         >
           Book Your Event
         </Link>
-{/* 
+        {/* 
         <Link
           href="#portfolio"
           className="rounded-full border border-[#C89A7B] px-8 py-4 text-center font-medium text-[#0F4C4C] transition-all duration-300 hover:bg-[#C89A7B]/10"

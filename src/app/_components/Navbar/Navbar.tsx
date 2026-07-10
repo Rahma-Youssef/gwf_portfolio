@@ -64,11 +64,11 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="relative group font-medium text-[#163636]"
+              className="relative group font-medium text-xl text-[#163636]"
             >
               {link.name}
 
-              <span className="absolute left-0 -bottom-2 h-[2px] bg-[#0F4C4C] w-0 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute left-0 -bottom-2 h-0.5 bg-[#0F4C4C] w-0 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
@@ -141,7 +141,7 @@ lg:hidden
 "
           >
             {/* Close */}
-            <div className="flex justify-end p-6">
+            <div className="flex justify-end p-3">
               <button
                 onClick={() => setOpen(false)}
                 className="rounded-full p-2 hover:bg-[#ECE3D8] transition"
@@ -159,11 +159,11 @@ lg:hidden
                 height={110}
               />
 
-              <h2 className="mt-4 text-3xl font-semibold font-cormorant  text-[#0F4C4C]">
+              <h2 className=" text-3xl font-semibold font-cormorant  text-[#0F4C4C]">
                 Golden Glow
               </h2>
 
-              <p className="font-allura mt-1 text-2xl text-[#C89A7B]">
+              <p className="font-allura  text-2xl text-[#C89A7B]">
                 Creating Moments
               </p>
 
@@ -173,7 +173,7 @@ lg:hidden
             </div>
 
             {/* Links */}
-            <div className="mt-4 flex flex-1 flex-col items-center justify-center gap-4">
+            <div className=" flex flex-col items-center justify-center gap-3 py-4">
               {links.map((link, index) => (
                 <motion.a
                   key={link.name}
@@ -197,7 +197,7 @@ lg:hidden
             </div>
 
             {/* Button */}
-            <div className="p-8">
+            <div className="p-3">
               <a
                 href="#Contact"
                 onClick={() => setOpen(false)}
