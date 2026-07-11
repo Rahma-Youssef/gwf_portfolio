@@ -19,7 +19,7 @@ export default function Contact() {
       className="py-20"
     >
       <Header
-        title="Contact Us"
+        title="Our Portfolio"
         description="نقدم مجموعة متكاملة من خدمات تنظيم المناسبات لتناسب جميع احتياجاتكم."
         isInView={isInView}
       />
