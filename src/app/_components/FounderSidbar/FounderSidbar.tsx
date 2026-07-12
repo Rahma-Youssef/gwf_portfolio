@@ -144,7 +144,8 @@ export default function FounderSidebar({
                   <h4
                     className="
                       font-serif
-                      text-2xl
+                      md:text-2xl
+                      text-[20px]
                       text-[#0F4C4C]
                     "
                   >

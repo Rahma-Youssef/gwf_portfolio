@@ -37,7 +37,7 @@ export default function Header({
       <span className="inline-flex items-center gap-3 rounded-full border border-[#E7D5C3] bg-white/70 px-6 py-2 backdrop-blur">
         <span className="h-px w-8 bg-[#C89A7B]" />
 
-        <span className="font-allura text-4xl font-extrabold text-[#C89A7B] md:text-5xl">
+        <span className="font-allura text-3xl font-extrabold text-[#C89A7B] md:text-5xl">
           {title}
         </span>
 

@@ -21,7 +21,7 @@ export default function OurPortfolio() {
     >
       <Header
         title="Our Portfolio"
-        description="نقدم مجموعة متكاملة من خدمات تنظيم المناسبات لتناسب جميع احتياجاتكم."
+        // description="نقدم مجموعة متكاملة من خدمات تنظيم المناسبات لتناسب جميع احتياجاتكم."
         isInView={isInView}
       />
     </section>

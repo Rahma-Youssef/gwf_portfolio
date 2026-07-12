@@ -64,7 +64,8 @@ export default function FounderInfo({
           className="
             mt-6
             font-serif
-            text-5xl
+            text-4xl
+            md:text-5xl
             text-[#0F4C4C]
           "
         >
@@ -117,7 +118,8 @@ export default function FounderInfo({
             className="
               pt-3
               font-serif
-              text-2xl
+              md:text-2xl
+              text-lg
               italic
               leading-10
               text-[#0F4C4C]

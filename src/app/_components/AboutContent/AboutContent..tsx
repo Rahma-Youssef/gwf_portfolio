@@ -26,7 +26,7 @@ const isInView = useInView(Ref, {
 
 
 
-      <h3 className="text-3xl md:text-5xl font-bold leading-relaxed text-[#0F4C4C] ">
+      <h3 className="text-2xl md:text-5xl font-bold leading-relaxed text-[#0F4C4C] ">
         نصنع لحظات تستحق أن تُخلّد
       </h3>
 

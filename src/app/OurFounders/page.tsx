@@ -25,7 +25,7 @@ export default function OurFounders() {
 
   return (
     <section
-      id="OurFounders"
+      id="Founders"
       ref={sectionRef}
       className="relative overflow-hidden bg-[#FAF7F2] py-24"
     >
@@ -38,7 +38,7 @@ export default function OurFounders() {
       <div className="container mx-auto px-6">
 
         <Header
-          title="Meet Our Founders"
+          title=" Our Founders"
           description="تعرف على أصحاب الرؤية الذين يقفون وراء كل لحظة مميزة نصنعها."
           isInView={isInView}
         />

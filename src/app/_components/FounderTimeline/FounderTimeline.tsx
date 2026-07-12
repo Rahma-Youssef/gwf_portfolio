@@ -53,7 +53,8 @@ export default function FounderTimeline({
                     <h2 className="
                         mt-3
                         font-serif
-                        text-4xl
+                        md:text-4xl
+                        text-2xl
                         text-[#0F4C4C]
                     ">
                         Professional Timeline
@@ -93,27 +94,27 @@ export default function FounderTimeline({
                     <div className="space-y-10">
 
 
-                        {founder.timeline.map((item,index)=>(
-                            
+                        {founder.timeline.map((item, index) => (
+
                             <motion.div
                                 key={index}
 
                                 initial={{
-                                    opacity:0,
-                                    x:40
+                                    opacity: 0,
+                                    x: 40
                                 }}
 
                                 whileInView={{
-                                    opacity:1,
-                                    x:0
+                                    opacity: 1,
+                                    x: 0
                                 }}
 
                                 viewport={{
-                                    once:true
+                                    once: true
                                 }}
 
                                 transition={{
-                                    duration:.5
+                                    duration: .5
                                 }}
 
                                 className="
@@ -137,12 +138,12 @@ export default function FounderTimeline({
 
                                     <motion.div
                                         animate={{
-                                            scale:[1,1.2,1]
+                                            scale: [1, 1.2, 1]
                                         }}
 
                                         transition={{
-                                            repeat:Infinity,
-                                            duration:2
+                                            repeat: Infinity,
+                                            duration: 2
                                         }}
 
                                         className="
@@ -179,7 +180,7 @@ export default function FounderTimeline({
                                 <motion.div
 
                                     whileHover={{
-                                        y:-5
+                                        y: -5
                                     }}
 
                                     className="
@@ -212,9 +213,10 @@ export default function FounderTimeline({
                                         className="
                                             mt-5
                                             font-serif
-                                            text-2xl
+                                            text-xl
                                             text-[#0F4C4C]
                                         "
+                                        dir={item.dir}
                                     >
                                         {item.title}
                                     </h3>
@@ -285,7 +287,7 @@ export default function FounderTimeline({
                     <div className="space-y-20">
 
 
-                        {founder.timeline.map((item,index)=>{
+                        {founder.timeline.map((item, index) => {
 
                             const reverse = index % 2 !== 0;
 
@@ -297,21 +299,21 @@ export default function FounderTimeline({
                                     key={index}
 
                                     initial={{
-                                        opacity:0,
-                                        y:40
+                                        opacity: 0,
+                                        y: 40
                                     }}
 
                                     whileInView={{
-                                        opacity:1,
-                                        y:0
+                                        opacity: 1,
+                                        y: 0
                                     }}
 
                                     viewport={{
-                                        once:true
+                                        once: true
                                     }}
 
                                     transition={{
-                                        duration:.6
+                                        duration: .6
                                     }}
 
                                     className="
@@ -328,7 +330,7 @@ export default function FounderTimeline({
                                     <div
                                         className={`
                                             px-10
-                                            ${reverse 
+                                            ${reverse
                                                 ? "col-start-2"
                                                 : "col-start-1"
                                             }
@@ -339,8 +341,8 @@ export default function FounderTimeline({
                                         <motion.div
 
                                             whileHover={{
-                                                scale:1.03,
-                                                y:-6
+                                                scale: 1.03,
+                                                y: -6
                                             }}
 
                                             className="
@@ -420,12 +422,12 @@ export default function FounderTimeline({
                                         <motion.div
 
                                             animate={{
-                                                scale:[1,1.25,1]
+                                                scale: [1, 1.25, 1]
                                             }}
 
                                             transition={{
-                                                repeat:Infinity,
-                                                duration:2
+                                                repeat: Infinity,
+                                                duration: 2
                                             }}
 
                                             className="

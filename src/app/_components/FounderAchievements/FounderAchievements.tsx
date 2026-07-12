@@ -39,7 +39,7 @@ export default function FounderAchievements({
             Highlights
           </p>
 
-          <h2 className="mt-3 font-serif text-4xl text-[#0F4C4C]">
+          <h2 className="mt-3 font-serif text-3xl md:text-4xl text-[#0F4C4C]">
             Career Achievements
           </h2>
 
@@ -130,7 +130,8 @@ export default function FounderAchievements({
                   className="
                     mt-7
                     font-serif
-                    text-2xl
+                    md:text-2xl
+                    text-xl
                     text-[#0F4C4C]
                     font-semibold
                   "

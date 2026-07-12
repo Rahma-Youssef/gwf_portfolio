@@ -11,7 +11,7 @@ import navbarLogo from "./../../../../public/images/logo.png";
 const links = [
   { name: "Home", href: "#" },
   { name: "About", href: "#About" },
-  { name: "Services", href: "#services" },
+  { name: "Founders", href: "#Founders" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact", href: "#Contact" },
 ];

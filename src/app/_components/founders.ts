@@ -56,7 +56,7 @@ export const founders: FounderType[] = [
 
     image: alaaImage,
 
-    name: "Alaa El Kokany",
+    name: "Alaa ElKokany",
 
     role: "Founder & CEO",
 
@@ -86,6 +86,7 @@ export const founders: FounderType[] = [
         title: "خبرة عملية",
         description:
           "تنفيذ وإدارة عشرات المناسبات والفعاليات باحترافية منذ عام 2016.",
+           dir:"rtl",
      
       },
 
@@ -94,6 +95,7 @@ export const founders: FounderType[] = [
         title: "فعاليات متنوعة",
         description:
           "تنظيم حفلات زفاف وخطوبة وأعياد ميلاد وفعاليات شركات ومناسبات خاصة.",
+           dir:"rtl",
        
       },
 
@@ -102,6 +104,7 @@ export const founders: FounderType[] = [
         title: "تأسيس Golden Glow",
         description:
           "المشاركة في تأسيس Golden Glow Events وتقديم تجربة فاخرة في تنظيم المناسبات.",
+           dir:"rtl",
         
       },
     ],

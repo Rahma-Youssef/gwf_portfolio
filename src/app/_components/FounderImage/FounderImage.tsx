@@ -114,7 +114,7 @@ export default function FounderImage({
               shadow-[0_40px_100px_rgba(0,0,0,.14)]
             "
           >
-                        {/* Founder Image */}
+            {/* Founder Image */}
 
             <motion.div
               whileHover={{
@@ -171,14 +171,16 @@ export default function FounderImage({
                   ease: "easeInOut",
                 }}
                 className="
-                  absolute
-                  top-0
-                  h-full
-                  w-24
-                  -skew-x-12
-                  bg-white/20
-                  blur-xl
-                "
+  hidden
+  lg:block
+  absolute
+  top-0
+  h-full
+  w-24
+  -skew-x-12
+  bg-white/20
+  blur-xl
+"
               />
 
               {/* Name */}
@@ -206,7 +208,7 @@ export default function FounderImage({
                   }}
                   className="
                     font-serif
-                    text-3xl
+                    text-2xl
                     sm:text-4xl
                     lg:text-5xl
                     text-white
@@ -231,15 +233,15 @@ export default function FounderImage({
 
             {/* Floating Founder Card */}
 
-           <motion.div
-  animate={{
-    y: [0, -8, 0],
-  }}
-  transition={{
-    duration: 3,
-    repeat: Infinity,
-  }}
-  className="
+            <motion.div
+              animate={{
+                y: [0, -8, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+              }}
+              className="
     absolute
 
     -left-5
@@ -271,11 +273,11 @@ export default function FounderImage({
     shadow-[0_20px_50px_rgba(0,0,0,.35)]
     backdrop-blur-xl
   "
->
-  <div className="flex items-center gap-3 sm:gap-4">
+            >
+              <div className="flex items-center gap-3 sm:gap-4">
 
-    <div
-      className="
+                <div
+                  className="
         flex
         h-10
         w-10
@@ -293,17 +295,17 @@ export default function FounderImage({
 
         bg-[#C89A7B]/20
       "
-    >
-      <Crown
-        size={20}
-        className="text-[#D8B89A] sm:w-6 sm:h-6 lg:w-7 lg:h-7"
-      />
-    </div>
+                >
+                  <Crown
+                    size={20}
+                    className="text-[#D8B89A] sm:w-6 sm:h-6 lg:w-7 lg:h-7"
+                  />
+                </div>
 
-    <div>
+                <div>
 
-      <p
-        className="
+                  <p
+                    className="
           text-[9px]
           sm:text-[10px]
           lg:text-[11px]
@@ -312,12 +314,12 @@ export default function FounderImage({
           tracking-[.25em]
           text-[#D8B89A]
         "
-      >
-        Founder
-      </p>
+                  >
+                    Founder
+                  </p>
 
-      <h3
-        className="
+                  <h3
+                    className="
           mt-1
           sm:mt-2
 
@@ -328,12 +330,12 @@ export default function FounderImage({
           font-bold
           text-white
         "
-      >
-        {founder.role}
-      </h3>
+                  >
+                    {founder.role}
+                  </h3>
 
-      <p
-        className="
+                  <p
+                    className="
           mt-1
           sm:mt-2
 
@@ -342,16 +344,16 @@ export default function FounderImage({
 
           text-[#F4E2CF]
         "
-      >
-        Since {founder.since}
-      </p>
+                  >
+                    Since {founder.since}
+                  </p>
 
-    </div>
+                </div>
 
-  </div>
-</motion.div>
+              </div>
+            </motion.div>
 
-                {/* Floating Sparkle */}
+            {/* Floating Sparkle */}
 
             <motion.div
               animate={{

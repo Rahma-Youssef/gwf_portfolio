@@ -20,7 +20,7 @@ export default function Contact() {
     >
       <Header
         title="Contact Us"
-        description="نقدم مجموعة متكاملة من خدمات تنظيم المناسبات لتناسب جميع احتياجاتكم."
+        // description="نقدم مجموعة متكاملة من خدمات تنظيم المناسبات لتناسب جميع احتياجاتكم."
         isInView={isInView}
       />
     </section>
