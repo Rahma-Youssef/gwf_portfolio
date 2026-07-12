@@ -5,7 +5,8 @@ import { useInView } from "motion/react";
 
 import Header from "../_components/Header/Header";
 
-export default function Contact() {
+
+export default function OurPortfolio() {
   const sectionRef = useRef(null);
 
   const isInView = useInView(sectionRef, {
@@ -15,7 +16,7 @@ export default function Contact() {
   return (
     <section
       ref={sectionRef}
-      id="Contact"
+      id="OurPortfolio"
       className="py-20"
     >
       <Header

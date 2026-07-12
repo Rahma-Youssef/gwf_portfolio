@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 type HeaderProps = {
   title: string;
-  description: string;
+  description?: string;
   isInView?: boolean;
 };
 
