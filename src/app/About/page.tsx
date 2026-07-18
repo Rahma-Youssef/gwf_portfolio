@@ -3,9 +3,11 @@
 import { useRef } from "react";
 import { useInView } from "motion/react";
 import Header from "../_components/Header/Header";
-import AboutImage from "../_components/AboutImage/AboutImage";
-import AboutContent from "../_components/AboutContent/AboutContent.";
-import Count from "../_components/count/count";
+import AboutImage from "../_components/AboutSec/AboutImage/AboutImage";
+import AboutContent from "../_components/AboutSec/AboutContent/AboutContent.";
+import Count from "../_components/AboutSec/count/count";
+import TrustedClients from "../_components/AboutSec/TrustedClients/TrustedClients";
+
 
 
 
@@ -14,7 +16,7 @@ export default function About() {
   const sectionRef = useRef(null);
 
   const isInView = useInView(sectionRef, {
-    amount: 0.3,
+    amount: 0.05,
   });
 
   return (
@@ -40,10 +42,13 @@ export default function About() {
 
             <Count isInView={isInView} />
 
+
           </div>
 
 
         </div>
+
+        <TrustedClients isInView={isInView} />
 
       </div>
     </section>

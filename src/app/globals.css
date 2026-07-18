@@ -7,9 +7,11 @@
 .font-allura {
   font-family: var(--font-allura);
 }
+
 .font-cormorant {
   font-family: var(--font-cormorant);
 }
+
 .font-Poppins {
   font-family: var(--font-Poppins);
 }
@@ -164,10 +166,21 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
 }

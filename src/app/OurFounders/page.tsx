@@ -5,12 +5,12 @@ import { useInView } from "motion/react";
 
 
 
-import { founders } from "../_components/founders";
-import FounderSidebar from "../_components/FounderSidbar/FounderSidbar";
-import FounderImage from "../_components/FounderImage/FounderImage";
-import FounderInfo from "../_components/FounderInfo/FounderInfo";
-import FounderAchievements from "../_components/FounderAchievements/FounderAchievements";
-import FounderTimeline from "../_components/FounderTimeline/FounderTimeline";
+import { founders } from "../../data/founders";
+import FounderSidebar from "../_components/FounderSec/FounderSidbar/FounderSidbar";
+import FounderImage from "../_components/FounderSec/FounderImage/FounderImage";
+import FounderInfo from "../_components/FounderSec/FounderInfo/FounderInfo";
+import FounderAchievements from "../_components/FounderSec/FounderAchievements/FounderAchievements";
+import FounderTimeline from "../_components/FounderSec/FounderTimeline/FounderTimeline";
 import Header from "../_components/Header/Header";
 
 export default function OurFounders() {

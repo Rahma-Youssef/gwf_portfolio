@@ -1,9 +1,9 @@
 
 "use client"; // This directive is used to indicate that the following code should be executed on the client side in a Next.js application.
 
-import FallingLeaf from "../_components/FallingLeaf/FallingLeaf";
-import HeroContent from "../_components/HeroContent/HeroContent";
-import HeroImage from "../_components/HeroImage/HeroImage";
+import FallingLeaf from "../_components/HeroSec/FallingLeaf/FallingLeaf";
+import HeroContent from "../_components/HeroSec/HeroContent/HeroContent";
+import HeroImage from "../_components/HeroSec/HeroImage/HeroImage";
 import { useRef } from "react";
 import { useInView } from "motion/react";
 

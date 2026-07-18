@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "motion/react";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 type HeaderProps = {
   title: string;
@@ -32,7 +32,7 @@ export default function Header({
           }
       }
       transition={{ duration: 0.8 }}
-      className="mb-24 flex flex-col items-center text-center"
+      className="flex flex-col items-center text-center"
     >
       <span className="inline-flex items-center gap-3 rounded-full border border-[#E7D5C3] bg-white/70 px-6 py-2 backdrop-blur">
         <span className="h-px w-8 bg-[#C89A7B]" />

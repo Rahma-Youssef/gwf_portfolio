@@ -11,8 +11,11 @@ export default function Home() {
     <div className="">
       <Hero></Hero>
       <About></About>
-       <OurFounders></OurFounders>
+
+      <OurFounders></OurFounders>
+
       <OurPortfolio></OurPortfolio>
+
       <Contact></Contact>
     </div>
   );
