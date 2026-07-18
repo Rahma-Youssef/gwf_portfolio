@@ -201,11 +201,10 @@ export const portfolio: PortfolioItem[] = [
     title: "Handmade",
     subtitle: "Handmade Decorations",
 
-    cover: "/images/portfolio/seasonal/1.webp",
+    cover: "/images/portfolio/handmade",
 
     images: [
-      "/images/portfolio/seasonal/1.webp",
-      "/images/portfolio/seasonal/2.webp",
+    
     ],
   },
 ];

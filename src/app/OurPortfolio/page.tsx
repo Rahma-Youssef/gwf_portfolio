@@ -91,7 +91,7 @@ export default function OurPortfolio() {
   return (
     <main
       ref={portfolioRef}
-      id="portfolio"
+      id="gallery"
       className="bg-[#FAF7F2]"
     >
       {!selectedItem && (
