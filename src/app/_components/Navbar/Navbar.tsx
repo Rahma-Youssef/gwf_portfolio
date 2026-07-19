@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500   ${scroll
-        ? "backdrop-blur-xl bg-[#ebd6c2]/70 shadow-lg py-3"
+        ? "backdrop-blur-xl bg-[#ebd6c2] shadow-lg py-3"
         : "bg-transparent py-6 "
         }`}
     >

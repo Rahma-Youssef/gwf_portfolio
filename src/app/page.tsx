@@ -5,6 +5,7 @@ import Hero from "./Hero/page";
 import Contact from "./Contact/page";
 import OurPortfolio from "./OurPortfolio/page";
 import OurFounders from "./OurFounders/page";
+import ContactSection from "./_components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
 
       <OurPortfolio></OurPortfolio>
 
-      <Contact></Contact>
+      <ContactSection isInView ></ContactSection>
     </div>
   );
 }

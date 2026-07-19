@@ -17,7 +17,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Wedding Events",
     subtitle: "Luxury Wedding Decoration",
 
-    cover: "/images/portfolio/wedding/51.webp",
+    cover: "/images/portfolio/wedding/41.webp",
 
     location: "Alexandria",
 
@@ -101,6 +101,22 @@ export const portfolio: PortfolioItem[] = [
       "/images/portfolio/wedding/73.webp",
       "/images/portfolio/wedding/74.webp",    
       "/images/portfolio/wedding/75.webp",
+      "/images/portfolio/wedding/76.webp",
+      "/images/portfolio/wedding/77.webp",
+      "/images/portfolio/wedding/78.webp",
+      "/images/portfolio/wedding/79.webp",
+      "/images/portfolio/wedding/80.webp",
+      "/images/portfolio/wedding/81.webp",
+      "/images/portfolio/wedding/82.webp",
+      "/images/portfolio/wedding/83.webp",
+      "/images/portfolio/wedding/84.webp",
+      "/images/portfolio/wedding/85.webp",
+      "/images/portfolio/wedding/86.webp",
+      "/images/portfolio/wedding/87.webp",
+      "/images/portfolio/wedding/88.webp",
+      "/images/portfolio/wedding/89.webp",
+   
+
 
 
      
@@ -112,7 +128,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Birthday",
     subtitle: "Birthday Party Decoration",
 
-    cover: "/images/portfolio/birthday/7.webp",
+    cover: "/images/portfolio/birthday/28.webp",
 
     featured: false,
 
@@ -142,6 +158,23 @@ export const portfolio: PortfolioItem[] = [
       "/images/portfolio/birthday/23.webp",
       "/images/portfolio/birthday/24.webp",
       "/images/portfolio/birthday/25.webp",
+      "/images/portfolio/birthday/26.webp",
+      "/images/portfolio/birthday/27.webp",
+      "/images/portfolio/birthday/28.webp",
+      "/images/portfolio/birthday/29.webp",
+      "/images/portfolio/birthday/30.webp",
+      "/images/portfolio/birthday/31.webp",
+      "/images/portfolio/birthday/32.webp",
+      "/images/portfolio/birthday/33.webp",
+      "/images/portfolio/birthday/34.webp",
+      "/images/portfolio/birthday/35.webp",
+      "/images/portfolio/birthday/36.webp",
+      "/images/portfolio/birthday/37.webp",
+      "/images/portfolio/birthday/38.webp",
+      "/images/portfolio/birthday/39.webp",
+      "/images/portfolio/birthday/40.webp",
+      "/images/portfolio/birthday/41.webp",
+      "/images/portfolio/birthday/42.webp",
 
 
     ],
@@ -152,7 +185,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Baby Events",
     subtitle: "Baby Shower & Sebou",
 
-    cover: "/images/portfolio/baby/16.webp",
+    cover: "/images/portfolio/baby/4.webp",
 
     images: [
       "/images/portfolio/baby/1.webp",
@@ -174,6 +207,17 @@ export const portfolio: PortfolioItem[] = [
       "/images/portfolio/baby/17.webp",
       "/images/portfolio/baby/18.webp",
       "/images/portfolio/baby/19.webp",
+      "/images/portfolio/baby/20.webp",
+      "/images/portfolio/baby/21.webp",
+      "/images/portfolio/baby/22.webp",
+      "/images/portfolio/baby/23.webp",
+      "/images/portfolio/baby/24.webp",
+      "/images/portfolio/baby/25.webp",
+      "/images/portfolio/baby/26.webp",
+      "/images/portfolio/baby/27.webp",
+      "/images/portfolio/baby/28.webp",
+      
+
 
     ],
   },
@@ -192,6 +236,8 @@ export const portfolio: PortfolioItem[] = [
       "/images/portfolio/corporate/4.webp",
       "/images/portfolio/corporate/5.webp",
       "/images/portfolio/corporate/6.webp",
+      "/images/portfolio/corporate/7.webp",
+      "/images/portfolio/corporate/8.webp",
 
     ],
   },
@@ -201,9 +247,89 @@ export const portfolio: PortfolioItem[] = [
     title: "Handmade",
     subtitle: "Handmade Decorations",
 
-    cover: "/images/portfolio/handmade",
+    cover: "/images/portfolio/handmade/32.webp",
 
     images: [
+      "/images/portfolio/handmade/1.webp",
+      "/images/portfolio/handmade/2.webp",
+      "/images/portfolio/handmade/3.webp",
+      "/images/portfolio/handmade/4.webp",
+      "/images/portfolio/handmade/5.webp",
+      "/images/portfolio/handmade/6.webp",
+      "/images/portfolio/handmade/7.webp",
+      "/images/portfolio/handmade/8.webp",
+      "/images/portfolio/handmade/9.webp",
+      "/images/portfolio/handmade/10.webp",
+      "/images/portfolio/handmade/11.webp",
+      "/images/portfolio/handmade/12.webp",
+      "/images/portfolio/handmade/13.webp",
+      "/images/portfolio/handmade/14.webp",
+      "/images/portfolio/handmade/15.webp",
+      "/images/portfolio/handmade/16.webp",
+      "/images/portfolio/handmade/17.webp",
+      "/images/portfolio/handmade/18.webp",
+      "/images/portfolio/handmade/19.webp",
+      "/images/portfolio/handmade/20.webp",
+      "/images/portfolio/handmade/21.webp",
+      "/images/portfolio/handmade/22.webp",
+      "/images/portfolio/handmade/23.webp",
+      "/images/portfolio/handmade/24.webp",
+      "/images/portfolio/handmade/25.webp",
+      "/images/portfolio/handmade/26.webp",
+      "/images/portfolio/handmade/27.webp",
+      "/images/portfolio/handmade/28.webp",
+      "/images/portfolio/handmade/29.webp",
+      "/images/portfolio/handmade/30.webp",
+      "/images/portfolio/handmade/31.webp",
+      "/images/portfolio/handmade/32.webp",
+      "/images/portfolio/handmade/33.webp",
+      "/images/portfolio/handmade/34.webp",
+      "/images/portfolio/handmade/35.webp",
+      "/images/portfolio/handmade/36.webp",
+      "/images/portfolio/handmade/37.webp",
+      "/images/portfolio/handmade/38.webp",
+      "/images/portfolio/handmade/39.webp",
+      "/images/portfolio/handmade/40.webp",
+      "/images/portfolio/handmade/41.webp",
+      "/images/portfolio/handmade/42.webp",
+      "/images/portfolio/handmade/43.webp",
+      "/images/portfolio/handmade/44.webp",
+      "/images/portfolio/handmade/45.webp",
+      "/images/portfolio/handmade/46.webp",
+      "/images/portfolio/handmade/47.webp",
+      "/images/portfolio/handmade/48.webp",
+      "/images/portfolio/handmade/49.webp",
+   
+
+    ],
+  },
+  {
+    id: 6,
+    title: "Date Night",
+    subtitle: "Date Night Decorations",
+
+    cover: "/images/portfolio/Date/3.webp",
+
+    images: [
+      "/images/portfolio/Date/1.webp",
+      "/images/portfolio/Date/2.webp",
+      "/images/portfolio/Date/3.webp",
+      "/images/portfolio/Date/4.webp",
+      "/images/portfolio/Date/5.webp",
+      "/images/portfolio/Date/6.webp",
+      "/images/portfolio/Date/7.webp",
+      "/images/portfolio/Date/8.webp",
+      "/images/portfolio/Date/9.webp",
+      "/images/portfolio/Date/10.webp",
+      "/images/portfolio/Date/11.webp",
+      "/images/portfolio/Date/12.webp",
+      "/images/portfolio/Date/13.webp",
+      "/images/portfolio/Date/14.webp",
+      "/images/portfolio/Date/15.webp",
+      "/images/portfolio/Date/16.webp",
+      "/images/portfolio/Date/17.webp",
+
+
     
     ],
   },
