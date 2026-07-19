@@ -112,13 +112,6 @@ export const portfolio: PortfolioItem[] = [
       "/images/portfolio/wedding/84.webp",
       "/images/portfolio/wedding/85.webp",
       "/images/portfolio/wedding/86.webp",
-      "/images/portfolio/wedding/87.webp",
-      "/images/portfolio/wedding/88.webp",
-      "/images/portfolio/wedding/89.webp",
-   
-
-
-
      
     ],
   },
