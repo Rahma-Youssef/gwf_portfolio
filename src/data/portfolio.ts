@@ -17,7 +17,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Wedding Events",
     subtitle: "Luxury Wedding Decoration",
 
-    cover: "/images/portfolio/wedding/41.webp",
+    cover: "/images/portfolio/wedding/16.webp",
 
     location: "Alexandria",
 
